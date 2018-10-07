@@ -2,6 +2,8 @@ var express = require("express");
 var mongoose = require("mongoose");
 var expressHandlebars = require("express-handlebars");
 var bodyParser = require("body-parser");
+var cheerio = require("cheerio");
+var request = require("request");
 
 var PORT = process.env.PORT || 3000;
 
@@ -24,7 +26,6 @@ app.use(bodyParser.urlencoded({
 
 app.use(router);
 
-app.use(router);
 
 var db = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
 

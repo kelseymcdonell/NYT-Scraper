@@ -9,7 +9,7 @@ var headlineSchema = new Schema({
         unique: true
     },
     summary: {
-        tytpe: String,
+        type: String,
         required: true
     },
     date: String,
